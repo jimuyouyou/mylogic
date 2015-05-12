@@ -1,6 +1,11 @@
 # mylogic
 Detect and enhance one's logic
 
+# issues
+https://github.com/jimuyouyou/mylogic/issues
+
+# clone
+git clone https://github.com/jimuyouyou/mylogic.git
 
 # How to edit it
 e:
