@@ -1,9 +1,26 @@
-body{background: black;}
+body{background: #d6d2d2;}
 
 .container {
   background: white;
   width: 80%;
-  height: 100%;
+  height: auto;
   position: relative;
   margin: auto;
 }
+
+#login-dropdown-list {
+	left: -80px;
+}
+#div_footer{
+	background-image: linear-gradient(to bottom, black, black);
+	width: 100%;
+	height: 80px;
+	position: relative;
+	margin: auto;
+	font-color: red;
+	}
+.navbar-inner
+	{
+		background-image: linear-gradient(to bottom, black, black);
+	}
+.font_footer{font-color:yellow;}
