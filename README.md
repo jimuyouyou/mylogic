@@ -15,3 +15,9 @@ git pull
 git add -A
 git commit -m "background for all"
 git push
+
+#packages
+meteor add bootstrap
+meteor add iron:router
+meteor add accounts-ui
+meteor add accounts-password
