@@ -5,6 +5,15 @@
 	<div class="wrapper">
       {{#each questions}}
        <p> {{{ quest.val }}} </p>
+       {{#if quest.multi}}
+	       {{#each anwsers}}
+		       	<p> <input type="checkbox" name="anws">{{{ val }}} </p>
+		   {{/each}}
+       {{else}}
+	       {{#each anwsers}}
+	       	<p> <input type="radio" name="anws">{{{ val }}} </p>
+	       {{/each}}
+       {{/if}}
       {{/each}}
     </div>
 </div>

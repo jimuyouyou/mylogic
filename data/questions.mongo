@@ -1,34 +1,34 @@
 http://jsonschema.net/#/
 
 user meteor;
+db.questions.remove({});
 db.questions.save({
   "quest": {
-    "val": "<div class=\"question-typename\" style=\"text-align: center;\">In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income decreased by <em>p</em>percent.whereas Mrs.Smith's annual income increased by <em>p</em> percent.p&gt;0</div>\n<div class=\"clearfix\">\n<div class=\"fl\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity A</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1988</p>\n</div>\n<div class=\"fr\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity B</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1989</p>\n</div>\n</div>",
-    "sval": "<div class=\"question-typename\" style=\"text-align: center;\">In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income <strong>decreased</strong> by <em>p</em>percent.whereas Mrs.Smith's annual income <strong>increased</strong> by <em>p</em> percent.p&gt;0</div>\n<div class=\"clearfix\">\n<div class=\"fl\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity A</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1988</p>\n</div>\n<div class=\"fr\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity B</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1989</p>\n</div>\n</div>",
-    "exp":"decrease increase",
+    "val": "<div class=\"question-typename\" style=\"box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft Yahei UI','Microsoft YaHei',SimHei,宋体,simsun,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: #ffffff; text-align: left;\">In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income decreased by<span class=\"Apple-converted-space\">&nbsp;</span><em style=\"box-sizing: border-box;\">p</em>percent.whereas Mrs.Smith's annual income increased by<span class=\"Apple-converted-space\">&nbsp;</span><em style=\"box-sizing: border-box;\">p</em><span class=\"Apple-converted-space\">&nbsp;</span>percent.p&gt;0</div>\n<div class=\"clearfix\" style=\"box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, 宋体, simsun, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;\">\n<div class=\"fl\" style=\"box-sizing: border-box; float: left; width: 261.1875px; text-align: center; padding: 0px 25px;\">\n<h4 style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, 宋体, simsun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 10px; margin-bottom: 10px; font-size: 18px; text-decoration: underline;\">Quantity A</h4>\n<p style=\"box-sizing: border-box; margin: 0px;\">Mr.and Mrs.Smith's combined annual income in 1988</p>\n</div>\n<div class=\"fr\" style=\"box-sizing: border-box; float: right; width: 261.1875px; text-align: center; padding: 0px 25px;\">\n<h4 style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, 宋体, simsun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 10px; margin-bottom: 10px; font-size: 18px; text-decoration: underline;\">Quantity B</h4>\n<p style=\"box-sizing: border-box; margin: 0px;\">Mr.and Mrs.Smith's combined annual income in 1989</p>\n</div>\n</div>",
+    "sval": "<div class=\"question-typename\" style=\"box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft Yahei UI','Microsoft YaHei',SimHei,宋体,simsun,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: #ffffff; text-align: left;\">In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income decreased by<span class=\"Apple-converted-space\">&nbsp;</span><em style=\"box-sizing: border-box;\">p</em>percent.whereas Mrs.Smith's annual income increased by<span class=\"Apple-converted-space\">&nbsp;</span><em style=\"box-sizing: border-box;\">p</em><span class=\"Apple-converted-space\">&nbsp;</span>percent.p&gt;0</div>\n<div class=\"clearfix\" style=\"box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, 宋体, simsun, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;\">\n<div class=\"fl\" style=\"box-sizing: border-box; float: left; width: 261.1875px; text-align: center; padding: 0px 25px;\">\n<h4 style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, 宋体, simsun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 10px; margin-bottom: 10px; font-size: 18px; text-decoration: underline;\">Quantity A</h4>\n<p style=\"box-sizing: border-box; margin: 0px;\">Mr.and Mrs.Smith's combined annual income in 1988</p>\n</div>\n<div class=\"fr\" style=\"box-sizing: border-box; float: right; width: 261.1875px; text-align: center; padding: 0px 25px;\">\n<h4 style=\"box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, 宋体, simsun, sans-serif; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 10px; margin-bottom: 10px; font-size: 18px; text-decoration: underline;\">Quantity B</h4>\n<p style=\"box-sizing: border-box; margin: 0px;\">Mr.and Mrs.Smith's combined annual income in 1989</p>\n</div>\n</div>",
     "tag": "math",
     "anws": ["A"],
-  	"multi": false
+    "multi": false
   },
   "anwsers": [
     {
-    "val": "<p><strong>A </strong>Quantity A is greater.</p>",
-    "sval": "<p><strong>A </strong>Quantity A is greater.</p>",
+    "val": "<strong>A </strong>Quantity A is greater.",
+    "sval": "<strong>A </strong>Quantity A is greater.",
     "tag": ">",
     "exp": "quest exp"
     }, {
-    "val": "<p><strong>B </strong>Quantity B is greater.</p>",
-    "sval": "<p><strong>B </strong>Quantity B is greater.</p>",
+    "val": "<strong>B </strong>Quantity B is greater.",
+    "sval": "<strong>B </strong>Quantity B is greater.",
     "tag": "<",
     "exp": "quest exp"
     }, {
-    "val": "<p><strong>C </strong>The two quantities are equal.</p>",
-    "sval": "<p><strong>C </strong>The two quantities are equal.</p>",
+    "val": "<strong>C </strong>The two quantities are equal.",
+    "sval": "<strong>C </strong>The two quantities are equal.",
     "tag": "=",
     "exp": "quest exp"
     }, {
-    "val": "<p><strong>D</strong> The relationship cannot be determined from the information given.</p>",
-    "sval": "<p><strong>D</strong> The relationship cannot be determined from the information given.</p>",
+    "val": "<strong>D</strong> The relationship cannot be determined from the information given.",
+    "sval": "<strong>D</strong> The relationship cannot be determined from the information given.",
     "tag": "+",
     "exp": "quest exp"
     }
@@ -36,3 +36,4 @@ db.questions.save({
 });
 
 db.questions.find({"quest.multi": false});
+#db.questions.find();
