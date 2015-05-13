@@ -1,40 +1,38 @@
+http://jsonschema.net/#/
+
 user meteor;
 db.questions.save({
   "quest": {
-    "val": "In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income decreased by ppercent.whereas Mrs.Smith's annual income increased by p percent.p>0",
-    "tag": "quest tag",
-    "exp":"quest exp",
-    "anws": ["A","B","D"],
-  	"multi": true
+    "val": "<div class=\"question-typename\" style=\"text-align: center;\">In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income decreased by <em>p</em>percent.whereas Mrs.Smith's annual income increased by <em>p</em> percent.p&gt;0</div>\n<div class=\"clearfix\">\n<div class=\"fl\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity A</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1988</p>\n</div>\n<div class=\"fr\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity B</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1989</p>\n</div>\n</div>",
+    "sval": "<div class=\"question-typename\" style=\"text-align: center;\">In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income <strong>decreased</strong> by <em>p</em>percent.whereas Mrs.Smith's annual income <strong>increased</strong> by <em>p</em> percent.p&gt;0</div>\n<div class=\"clearfix\">\n<div class=\"fl\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity A</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1988</p>\n</div>\n<div class=\"fr\" style=\"width: 40%; text-align: center; padding: 0 25px;\">\n<h4 style=\"font-weight: bold; text-decoration: underline;\">Quantity B</h4>\n<p>Mr.and Mrs.Smith's combined annual income in 1989</p>\n</div>\n</div>",
+    "exp":"decrease increase",
+    "tag": "math",
+    "anws": ["A"],
+  	"multi": false
   },
   "anwsers": [
     {
-    "label": "A",
-    "val": "quest val",
-    "tag": "quest tag",
+    "val": "<p><strong>A </strong>Quantity A is greater.</p>",
+    "sval": "<p><strong>A </strong>Quantity A is greater.</p>",
+    "tag": ">",
     "exp": "quest exp"
     }, {
-    "label": "B",
-    "val": "quest val",
-    "tag": "quest tag",
+    "val": "<p><strong>B </strong>Quantity B is greater.</p>",
+    "sval": "<p><strong>B </strong>Quantity B is greater.</p>",
+    "tag": "<",
     "exp": "quest exp"
     }, {
-    "label": "C",
-    "val": "quest val",
-    "tag": "quest tag",
+    "val": "<p><strong>C </strong>The two quantities are equal.</p>",
+    "sval": "<p><strong>C </strong>The two quantities are equal.</p>",
+    "tag": "=",
     "exp": "quest exp"
     }, {
-    "label": "D",
-    "val": "quest val",
-    "tag": "quest tag",
-    "exp": "quest exp"
-    }, {
-    "label": "E",
-    "val": "quest val",
-    "tag": "quest tag",
+    "val": "<p><strong>D</strong> The relationship cannot be determined from the information given.</p>",
+    "sval": "<p><strong>D</strong> The relationship cannot be determined from the information given.</p>",
+    "tag": "+",
     "exp": "quest exp"
     }
   ]
 });
 
-db.questions.find({"quest.multi": true});
+db.questions.find({"quest.multi": false});

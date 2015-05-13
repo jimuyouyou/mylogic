@@ -1,0 +1,11 @@
+<template name="practice">
+{{> usermenu}}
+
+<div id="content">
+	<div class="wrapper">
+      {{#each questions}}
+       <p> {{{ quest.val }}} </p>
+      {{/each}}
+    </div>
+</div>
+</template>
