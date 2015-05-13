@@ -1,0 +1,40 @@
+user meteor;
+db.questions.save({
+  "quest": {
+    "val": "In 1988 Mr.Smith's annual income was greater than Mrs.Smith's annual income.In 1989 Mr.Smith's annual income decreased by ppercent.whereas Mrs.Smith's annual income increased by p percent.p>0",
+    "tag": "quest tag",
+    "exp":"quest exp",
+    "anws": ["A","B","D"],
+  	"multi": true
+  },
+  "anwsers": [
+    {
+    "label": "A",
+    "val": "quest val",
+    "tag": "quest tag",
+    "exp": "quest exp"
+    }, {
+    "label": "B",
+    "val": "quest val",
+    "tag": "quest tag",
+    "exp": "quest exp"
+    }, {
+    "label": "C",
+    "val": "quest val",
+    "tag": "quest tag",
+    "exp": "quest exp"
+    }, {
+    "label": "D",
+    "val": "quest val",
+    "tag": "quest tag",
+    "exp": "quest exp"
+    }, {
+    "label": "E",
+    "val": "quest val",
+    "tag": "quest tag",
+    "exp": "quest exp"
+    }
+  ]
+});
+
+db.questions.find({"quest.multi": true});
