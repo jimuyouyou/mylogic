@@ -1,4 +1,6 @@
-body{background: #d6d2d2;}
+body{background: #d6d2d2;
+    color: #0a0a0a;
+}
 
 .container {
   background: white;
@@ -11,16 +13,31 @@ body{background: #d6d2d2;}
 #login-dropdown-list {
 	left: -80px;
 }
+
 #div_footer{
-	background-image: linear-gradient(to bottom, black, black);
+	background-image: linear-gradient(to bottom, #403e42, #403e42);
 	width: 100%;
 	height: 80px;
 	position: relative;
 	margin: auto;
-	font-color: red;
-	}
+	text-align:center ;
+	color: #eee9e9;
+}
+
 .navbar-inner
 	{
-		background-image: linear-gradient(to bottom, black, black);
+		background-image: linear-gradient(to bottom, #222123, #222123);
 	}
-.font_footer{font-color:yellow;}
+
+.hr_footer{margin:0px;
+			height:1px;
+			border:0px;
+			background-color:#D5D5D5;
+			
+
+			}
+.navbar .brand{
+	color: #f3eeee;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover{color: #f3eeee;}
+.navbar .nav > li > a {color:#faf5f5;}
