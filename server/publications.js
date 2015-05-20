@@ -14,7 +14,6 @@ Meteor.publish('userQuestions', function() {
 				uq.questId = q._id;
 				uq.tag = q.quest.tag;
 				uq.atag = q.quest.atag;
-				var str = JSON.stringify(uq);
 				UserQuestions.upsert(uq, uq);
 			} // for
 

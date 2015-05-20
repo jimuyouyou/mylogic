@@ -4,18 +4,18 @@
 <div id="content">
 	<div class="wrapper">
       {{#each userQuestions}}
-       <p> {{{ quest.val }}} </p>
-       hello quests
-       {{#if quest.qtype}}
-	       {{#each anwsers}}
-	       		<p> <input type="radio" name="anws">{{{ val }}} </p>
-		   {{/each}}
-       {{else}}
-	       {{#each anwsers}}
-		       	<p> <input type="checkbox" name="anws">{{{ val }}} </p>
-	       {{/each}}
-       {{/if}}
+        {{> single}}
       {{/each}}
     </div>
 </div>
+</template>
+
+<template name="single">
+  q: {{questId}}
+</template>
+
+<template name="multiple">
+</template>
+
+<template name="blankfill">
 </template>
