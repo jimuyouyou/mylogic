@@ -3,15 +3,16 @@
 
 <div id="content">
 	<div class="wrapper">
-      {{#each questions}}
+      {{#each userQuestions}}
        <p> {{{ quest.val }}} </p>
-       {{#if quest.multi}}
+       hello quests
+       {{#if quest.qtype}}
 	       {{#each anwsers}}
-		       	<p> <input type="checkbox" name="anws">{{{ val }}} </p>
+	       		<p> <input type="radio" name="anws">{{{ val }}} </p>
 		   {{/each}}
        {{else}}
 	       {{#each anwsers}}
-	       	<p> <input type="radio" name="anws">{{{ val }}} </p>
+		       	<p> <input type="checkbox" name="anws">{{{ val }}} </p>
 	       {{/each}}
        {{/if}}
       {{/each}}

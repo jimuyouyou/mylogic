@@ -1,6 +1,6 @@
 Template.practice.helpers({
-   questions: function() {
-    return Questions.find();
+   userQuestions: function() {
+    return UserQuestions.find();
   },
 
 });
