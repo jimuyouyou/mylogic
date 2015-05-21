@@ -24,7 +24,7 @@ git pull
 ## packages
 - meteor add bootstrap
 - meteor add iron:router
-- meteor add accounts-ui
+- meteor add ian:accounts-ui-bootstrap-3
 - meteor add accounts-password
 
 ## general design
@@ -54,6 +54,7 @@ git pull
 - choose those not anwsered questions by default
 - customized questions by tag, atag
 
+# 响应式
 
 
 

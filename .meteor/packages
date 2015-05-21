@@ -7,6 +7,6 @@
 meteor-platform
 insecure
 iron:router
-accounts-ui
 accounts-password
 bootstrap
+ian:accounts-ui-bootstrap-3
