@@ -14,7 +14,7 @@ Meteor.publish('userQuestions', function() {
 				uq.questId = q._id;
 				uq.tag = q.quest.tag;
 				uq.atag = q.quest.atag;
-				UserQuestions.upsert(uq, uq);
+				UserQuestions.insert(uq, uq);
 			} // for
 
 			// query again after insertion

@@ -1,17 +1,26 @@
 <template name="practice">
-{{> usermenu}}
+	{{> usermenu}}
 
-<div id="content">
-	<div class="wrapper">
-      {{#each userQuestions}}
-        {{> single}}
-      {{/each}}
-    </div>
-</div>
+	<div id="content">
+		<div class="wrapper">
+			<form>
+				{{#with userQuestion}}
+				{{> single}}
+				{{/with}}
+				<input type="hidden" name="userQuestId" id="userQuestId" value="{{_id}}">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
 </template>
 
 <template name="single">
-  q: {{questId}}
+	{{#with findQuestionById questId}}
+	{{{this.quest.val}}}
+	{{#each this.anwsers}}
+	<p><input type="radio" name="questAnswer" value="{{label}}"> {{{val}}}</p>
+	{{/each}}
+	{{/with}}
 </template>
 
 <template name="multiple">
