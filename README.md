@@ -55,7 +55,7 @@ git pull
 - customized questions by tag, atag
 
 ### report analysis
-- UserReport: {userId, questId, status, tag, atag, stag, crate, level}
+- UserReport: {userId, stag, crate, level}
 - question tag is general categeory, atag is detail for anwsers
 - analyze by both tag and atag, seperated by comma
 - inc+ and dec+ for each correct/incorecct question/anwser
