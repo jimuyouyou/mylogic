@@ -54,8 +54,15 @@ git pull
 - choose those not anwsered questions by default
 - customized questions by tag, atag
 
-# 响应式
+### report analysis
+- UserReport: {userId, questId, status, tag, atag, stag, crate, level}
+- question tag is general categeory, atag is detail for anwsers
+- analyze by both tag and atag, seperated by comma
+- inc+ and dec+ for each correct/incorecct question/anwser
+- sort by percentage dec+, tag-specific, question tag 
 
 
 
-UserQuestions.insert(uq, uq); error
+
+
+

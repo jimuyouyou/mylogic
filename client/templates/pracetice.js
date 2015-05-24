@@ -1,6 +1,6 @@
 Template.practice.helpers({
 	userQuestion: function() {
-		return UserQuestions.findOne({'status': '0'});
+		return UserQuestion.findOne({'status': '0'});
 	},
 });
 
