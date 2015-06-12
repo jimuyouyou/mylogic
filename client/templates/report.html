@@ -2,8 +2,38 @@
 	{{> usermenu}}
 
 	<div id="content">
-		{{generateReport}}
+		<h3>Identify your strengths and weaknesses:</h3>
+		<xmp>
+		question tag: 
+			1. math > mcompare  a. percent b. decimal
+			2. math > mequal  a. percent b. decimal
 
+		two level report:
+			1. tag level by comma
+			2. atag level by comma
+
+		Realtime report on client:
+
+		Should be a new field with subject of question:
+		</xmp>
+
+		{{generateReport}}
+		<table class="table">
+			<tr>
+				<td>Tag</td>
+				<td>Rate</td>
+				<td>Level</td>
+				<td>Questions with this tag</td>
+				<td>Description</td>
+			</tr>
+			<tr>
+				<td>greater than</td>
+				<td>30%</td>
+				<td>Entry</td>
+				<td><a href=''>Inspect more</a></td>
+				<td>confusion between greater than and less than</td>
+			</tr>
+		</table>
 	</div>
 
 </template>

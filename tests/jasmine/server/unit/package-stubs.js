@@ -7085,7 +7085,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "5fc94385fcee7415fe14bb0d34f6976087e5719c"
+                  "value": "8c5a86ef8f430fd9a5d9736e9123b4a19ba4f861"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7209,7 +7209,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 0
+              "value": 4
             },
             "timeout": {
               "type": "constant",
@@ -7853,7 +7853,7 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "050d990913af8933ee93ac446047cb9984857471"
+          "value": "1244a869d3b21c3f407a53c31c8e8a44cd6e5214"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
@@ -9792,127 +9792,7 @@ var packageMetadata = {
       "type": "object",
       "members": {
         "karmaChilds": {
-          "type": "object",
-          "members": {
-            "jasmine-client-unit": {
-              "type": "object",
-              "members": {
-                "taskName": {
-                  "type": "constant",
-                  "value": "jasmine-client-unit"
-                },
-                "appPath": {
-                  "type": "constant",
-                  "value": "/home/michael/work/mylogic"
-                },
-                "pid": {
-                  "type": "constant",
-                  "value": 8894
-                },
-                "fout": {
-                  "type": "constant",
-                  "value": 28
-                },
-                "child": {
-                  "type": "object",
-                  "members": {
-                    "domain": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "signalCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "exitCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "pid": {
-                      "type": "constant",
-                      "value": 8894
-                    },
-                    "stdin": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdout": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stderr": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdio": {
-                      "type": "array"
-                    },
-                    "spawn": {
-                      "type": "function"
-                    },
-                    "kill": {
-                      "type": "function"
-                    },
-                    "ref": {
-                      "type": "function"
-                    },
-                    "unref": {
-                      "type": "function"
-                    },
-                    "setMaxListeners": {
-                      "type": "function"
-                    },
-                    "emit": {
-                      "type": "function"
-                    },
-                    "addListener": {
-                      "type": "function",
-                      "refID": 17
-                    },
-                    "on": {
-                      "ref": 17
-                    },
-                    "once": {
-                      "type": "function"
-                    },
-                    "removeListener": {
-                      "type": "function"
-                    },
-                    "removeAllListeners": {
-                      "type": "function"
-                    },
-                    "listeners": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "getTaskName": {
-                  "type": "function"
-                },
-                "getChild": {
-                  "type": "function"
-                },
-                "getPid": {
-                  "type": "function"
-                },
-                "isDead": {
-                  "type": "function"
-                },
-                "isRunning": {
-                  "type": "function"
-                },
-                "readPid": {
-                  "type": "function"
-                },
-                "spawn": {
-                  "type": "function"
-                },
-                "kill": {
-                  "type": "function"
-                }
-              }
-            }
-          }
+          "type": "object"
         },
         "getKarmaChild": {
           "type": "function"
