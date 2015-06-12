@@ -26,6 +26,8 @@ git pull
 - meteor add iron:router
 - meteor add ian:accounts-ui-bootstrap-3
 - meteor add accounts-password
+- meteor add sanjo:jasmine
+- meteor add velocity:html-reporter
 
 ## general design
 ### questions

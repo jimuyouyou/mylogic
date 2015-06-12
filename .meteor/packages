@@ -10,3 +10,5 @@ iron:router
 accounts-password
 bootstrap
 ian:accounts-ui-bootstrap-3
+sanjo:jasmine
+velocity:html-reporter
