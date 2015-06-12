@@ -29,6 +29,10 @@ git pull
 - meteor add sanjo:jasmine
 - meteor add velocity:html-reporter
 
+## test
+- http://jasmine.github.io/2.3/introduction.html
+- https://atmospherejs.com/sanjo/jasmine
+
 ## general design
 ### questions
 - support different question types: single choice, multiple choice, blank fill
