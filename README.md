@@ -29,9 +29,10 @@ git pull
 - meteor add sanjo:jasmine
 - meteor add velocity:html-reporter
 
-## test
+## url
 - http://jasmine.github.io/2.3/introduction.html
 - https://atmospherejs.com/sanjo/jasmine
+- https://github.com/iron-meteor/iron-router
 
 ## general design
 ### questions
@@ -67,6 +68,7 @@ git pull
 - inc+ and dec+ for each correct/incorecct question/anwser
 - sort by percentage dec+, tag-specific, question tag 
 
+### dynamic collection name is required
 
 
 
