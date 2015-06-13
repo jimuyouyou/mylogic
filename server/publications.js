@@ -32,3 +32,4 @@ Meteor.publish('question', function() {
 Meteor.publish('userReport', function() {
 	return UserReport.find({"userId": this.userId});
 });
+
