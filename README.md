@@ -70,6 +70,10 @@ git pull
 
 ### dynamic collection name is required
 
+### balance 
+- use meteor bi-direction communication or REST
+- run at server/client, or both
+
 
 
 

@@ -8,8 +8,8 @@ Template.practice.events({
 	'submit form': function(e, template) {
 		var userQuestId = $('#userQuestId').val();
 		var checkedLabel = $('input[name="questAnswer"]:checked').val();
-		var anws = $('#anws').val();
-		QuestionUtil.submitQuestionAnswer(userQuestId, checkedLabel, anws);
+		var ans = $('#ans').val();
+		QuestionUtil.submitQuestionAnswer(userQuestId, checkedLabel, ans);
 	},
 });
 
