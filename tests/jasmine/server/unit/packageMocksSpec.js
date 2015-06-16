@@ -9808,11 +9808,11 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 28505
+                  "value": 5180
                 },
                 "fout": {
                   "type": "constant",
-                  "value": 27
+                  "value": 28
                 },
                 "child": {
                   "type": "object",
@@ -9831,7 +9831,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 28505
+                      "value": 5180
                     },
                     "stdin": {
                       "type": "null",

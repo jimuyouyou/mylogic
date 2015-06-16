@@ -74,6 +74,10 @@ git pull
 - use meteor bi-direction communication or REST
 - run at server/client, or both
 
+### screen shots
+<img src='data/screenshots/mylogic_add.jpg'/>
+<img src='data/screenshots/mylogic_practice.jpg'/>
+<img src='data/screenshots/mylogic_report.jpg'/>
 
 
 
