@@ -44,6 +44,7 @@ Meteor.publish('course', function() {
 });
 
 Meteor.publish('userSetting', function() {
+	CurrentUser.userId = this.userId;
 	return UserSetting.find({"userId": this.userId});
 });
 

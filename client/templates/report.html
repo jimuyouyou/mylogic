@@ -1,44 +1,84 @@
 <template name="report">
 	{{> usermenu}}
 
+	{{generateReport}}
 	<div id="content">
 		<h3>Identify your strengths and weaknesses:</h3>
-		{{generateReport}}
-		
-		<xmp>
-		question tag: 
-			1. math > mcompare  a. percent b. decimal
-			2. math > mequal  a. percent b. decimal
+		<p>Report by course:</p>
+		{{> courseReport}}
 
-		3 level report:
-			1. subject level
-			2. tag level by comma
-			3. atag level by comma
+		<p>Report by tag:</p>
+		{{> tagReport}}
 
-		
-		Realtime report on client:
+		<p>Report by sub tag:</p>
+		{{> atagReport}}
+	</div>
 
-		Subject
-		Tag
+</template>
 
-		</xmp>
-
+<template name="courseReport">
 		<table class="table">
 			<tr>
-				<td>Tag</td>
+				<td>Name</td>
 				<td>Rate</td>
 				<td>Level</td>
 				<td>Questions with this tag</td>
 				<td>Description</td>
 			</tr>
+	{{#each getCourseReport}} 
 			<tr>
-				<td>greater than</td>
-				<td>30%</td>
-				<td>Entry</td>
+				<td>{{rvalue}}</td>
+				<td>{{rate}}</td>
+				<td>{{level}}</td>
 				<td><a href=''>Inspect more</a></td>
-				<td>confusion between greater than and less than</td>
+				<td>Confusion between greater than and less than</td>
 			</tr>
+	{{/each}}
 		</table>
-	</div>
-
 </template>
+
+<template name="tagReport">
+		<table class="table">
+			<tr>
+				<td>Name</td>
+				<td>Rate</td>
+				<td>Level</td>
+				<td>Questions with this tag</td>
+				<td>Description</td>
+			</tr>
+	{{#each getTagReport}} 
+			<tr>
+				<td>{{rvalue}}</td>
+				<td>{{rate}}</td>
+				<td>{{level}}</td>
+				<td><a href=''>Inspect more</a></td>
+				<td>Confusion between greater than and less than</td>
+			</tr>
+	{{/each}}
+		</table>
+</template>
+
+
+<template name="atagReport">
+		<table class="table">
+			<tr>
+				<td>Name</td>
+				<td>Rate</td>
+				<td>Level</td>
+				<td>Questions with this tag</td>
+				<td>Description</td>
+			</tr>
+	{{#each getATagReport}} 
+			<tr>
+				<td>{{rvalue}}</td>
+				<td>{{rate}}</td>
+				<td>{{level}}</td>
+				<td><a href=''>Inspect more</a></td>
+				<td>Confusion between greater than and less than</td>
+			</tr>
+	{{/each}}
+		</table>
+</template>
+
+
+
